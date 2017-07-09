@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+  <link rel="stylesheet" href="game_display.css">
+  <script src="platform.js"></script>
+  <script src="display.js"></script>
+  <script src="levels.js"></script>
+  <div id='header' class='nongame'>
+    <h1>PLATFORM GAME</h1>
+  </div>
+
+  <div id='instructions' class='nongame'>
+	  <p>Use arrow keys to control player<br><br>Collect all coins to advace to next level<br><br>Don't touch the lava!</p>
+  </div>
+
+  <div id='scorebox' class='nongame'>
+    <p>Lives <span class="healthboard"></span></p>
+    <br><p>Level <span class="levelboard"></span></p>
+  </div>
+
+  <div id='gamebox' class='nongame'>
+  </div>
+  <div id='footer' class='nongame'>
+	  <span>Aditya Singh</span>
+	  <span><a href="http://www.github.com/adityasingh1995/platform">GitHub</a></span>
+	  <span><a href="http://www.linkedin.com/in/aditya-singh-3357b5120">LinkedIn</a></span>
+
+  </div>
+  
+
+  <script>
+    console.log(GAME_LEVELS)
+    runGame(GAME_LEVELS, DOMDisplay);
+  </script>
+
+</body>
+</html>
